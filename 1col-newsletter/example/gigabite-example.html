@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>A Simple Responsive HTML Email</title>
+    <style type="text/css">
+            @import url(http://fonts.googleapis.com/css?family=Bitter:700);
+            /* Default layout options */
+            body {margin: 0; padding: 0; min-width: 100%!important;}
+            a { color:#1c80c2;}
+            .content {width: 100%; max-width: 600px; background: #fff;}
+            .header { background-color: #500000; padding: 10px 20px 10px;}
+            .h1 {font-size: 12px;color:#fff; }
+            .h1, .bodycopy, .footer {font-family: sans-serif;}
+            
+            /* Styles for content */
+            .innerpadding {padding: 30px 50px 10px 50px;}
+
+.h2 {padding: 15px 0 15px 10px; font-size: 24px; font-weight: 700; font-family: "Bitter", Tahoma, sans-serif; color:#323232;}
+.bodycopy {font-size: 16px; line-height: 26px; color:#777; padding-left:10px;}
+            .button {text-align: center; font-size: 18px; font-family: sans-serif; font-weight: bold; padding: 0 30px 0 30px;}
+            .border-dash { font-size:65px; color:#fedf6b; line-height: 14px;
+padding-bottom: 25px;}
+            .button-area {
+                padding:30px 0 10px 10px;
+            }
+            
+            .footer {
+                font-size: 16px; line-height: 26px; color:#777; padding-bottom:20px;
+            }
+            
+            /* For Outlook for Mac 
+            @media only screen and (min-width: 601px) {
+                .content {width: 600px !important;}
+                .col250 {width: 250px!important;}
+                
+            }
+            
+             For Apple Mail 
+            @media only screen and (min-device-width: 601px) {
+                .content {width: 600px !important;}
+                 .col250 {width: 250px!important;}
+                
+            }*/
+    </style>
+</head>
+
+<body yahoo bgcolor="#eee">
+   
+    <table width="100%" bgcolor="#eee" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <!--[if (gte mso 9)|(IE)]>
+<table width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td>
+            <![endif]-->
+                <table class="content" align="center" cellpadding="0" cellspacing="0" border="0" style="width: 100%;max-width: 600px;background: #fff;">
+                    <tr>
+                        <!-- The Header of the email (600px = 70 + 425 + 25 padding)-->
+                        <td class="header" bgcolor="#50000" style="background-color: #500000;padding: 10px 20px 10px;">
+                            <!-- TAMU Logo -->
+                            <table width="300" align="left" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td height="29">
+                                        <img src="tam.png" border="0" alt="Texas A&M University">
+                                    </td>
+                                    <td class="h1" height="29" style="padding: 0 10px 0 0;font-size: 12px;color: #fff;font-family: sans-serif;">
+                                        Texas A&amp;M 
+                                        <br><strong>Information Technology</strong>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- Name - TAMU -->
+                            <!--[if (gte mso 9)|(IE)]>
+<table width="425" align="left" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td>
+        <![endif]-->
+                            <table class="col250" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; max-width: 250px;">
+                                <tr>
+                                    <td height="29">
+                                       <table id="Table_01" width="100%" border="0" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td>
+                                                <img src="images/social_01.png" width="74" height="29" alt="Follow Us"></td>
+                                            <td>
+                                                <img src="images/social_02.png" width="35" height="29" alt="Facebook"></td>
+                                            <td>
+                                                <img src="images/social_03.png" width="32" height="29" alt="Pinterest"></td>
+                                            <td>
+                                                <img src="images/social_04.png" width="37" height="29" alt="Twitter"></td>
+                                            <td>
+                                                <img src="images/social_05.png" width="28" height="29" alt="Pinterest"></td>
+                                        </tr>
+                                    </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--[if (gte mso 9)|(IE)]>
+        </td>
+    </tr>
+</table>
+<![endif]-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="gigabite-header.png" width="100%" border="0" alt="">
+                        </td>
+                    </tr>
+                    <!-- ***** BEGIN STORIES LAYOUT -->
+                    <tr>
+                        <td class="innerpadding" style="padding: 30px 50px 10px 50px;">
+                          <table width="100%" cellpadding="0" cellspacing="0">
+                           <tr>
+                               <td>
+                                <img src="images/story-1.png" width="100%" border="0">
+                                </td>
+                           </tr>
+                           <tr>
+                               <td class="h2" style="padding: 15px 0 15px 10px;font-size: 24px;font-weight: 700;font-family: &quot;Bitter&quot;, Tahoma, sans-serif;color: #323232;">
+                                   Protect Yourself in the Cloud
+                               </td>
+                            </tr>
+                            <tr>
+                                <td class="border-dash" style="font-size: 65px;color: #fedf6b;line-height: 14px;padding-bottom: 25px;">&mdash;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bodycopy" style="font-family: sans-serif;font-size: 16px;line-height: 26px;color: #777;padding-left: 10px;">
+                                    Recently leaked photos of celebrities are increasing concerns about the secirut of cloud computer. Learn how to be proactive and keep your information safe.
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td class="button-area" style="padding: 30px 0 10px 10px;"><div><!--[if mso]>
+  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:46px;v-text-anchor:middle;width:200px;" arcsize="0%" strokecolor="#fedf6b" fillcolor="#fdd453">
+    <w:anchorlock/>
+    <center style="color:#4f4f4f;font-family:Trebuchet MS,sans-serif;font-size:13px;font-weight:normal;letter-spacing:2px;">READ FULL STORY</center>
+  </v:roundrect>
+<![endif]--><a href="http://" style="background-color:#fedf6b;border:1px solid #fedf6b;border-radius:0px;color:#4f4f4f;display:inline-block;font-family:Trebuchet MS,sans-serif;font-size:13px;font-weight:normal;line-height:46px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;mso-hide:all;letter-spacing:1px;">READ FULL STORY</a></div>
+                                </td>
+                                </tr>
+                            </table>
+                                
+                            </td>
+                        </tr>
+                     <tr>
+                        <td class="innerpadding" style="padding: 30px 50px 10px 50px;">
+                          <table width="100%" cellpadding="0" cellspacing="0">
+                           <tr>
+                               <td>
+                                <img src="images/story-1.png" width="100%" border="0">
+                                </td>
+                           </tr>
+                           <tr>
+                               <td class="h2" style="padding: 15px 0 15px 10px;font-size: 24px;font-weight: 700;font-family: &quot;Bitter&quot;, Tahoma, sans-serif;color: #323232;">
+                                   Protect Yourself in the Cloud
+                               </td>
+                            </tr>
+                            <tr>
+                                <td class="border-dash" style="font-size: 65px;color: #fedf6b;line-height: 14px;padding-bottom: 25px;">&mdash;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bodycopy" style="font-family: sans-serif;font-size: 16px;line-height: 26px;color: #777;padding-left: 10px;">
+                                    Recently leaked photos of celebrities are increasing concerns about the secirut of cloud computer. Learn how to be proactive and keep your information safe.
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td style="padding:30px 0 30px 10px;"><div><!--[if mso]>
+  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:46px;v-text-anchor:middle;width:200px;" arcsize="0%" strokecolor="#fedf6b" fillcolor="#fdd453">
+    <w:anchorlock/>
+    <center style="color:#4f4f4f;font-family:Trebuchet MS,sans-serif;font-size:13px;font-weight:normal;letter-spacing:2px;">READ FULL STORY</center>
+  </v:roundrect>
+<![endif]--><a href="http://" style="background-color:#fedf6b;border:1px solid #fedf6b;border-radius:0px;color:#4f4f4f;display:inline-block;font-family:Trebuchet MS,sans-serif;font-size:13px;font-weight:normal;line-height:46px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;mso-hide:all;letter-spacing:1px;">READ FULL STORY</a></div>
+                                </td>
+                                </tr>
+                            </table>
+                                
+                            </td>
+                        </tr>
+                    <tr>
+                        <td class="innerpadding" style="padding: 30px 50px 10px 50px;">
+                          <table width="100%" cellpadding="0" cellspacing="0">
+                           <tr>
+                               <td>
+                                <img src="images/story-1.png" width="100%" border="0">
+                                </td>
+                           </tr>
+                           <tr>
+                               <td class="h2" style="padding: 15px 0 15px 10px;font-size: 24px;font-weight: 700;font-family: &quot;Bitter&quot;, Tahoma, sans-serif;color: #323232;">
+                                   Protect Yourself in the Cloud
+                               </td>
+                            </tr>
+                            <tr>
+                                <td class="border-dash" style="font-size: 65px;color: #fedf6b;line-height: 14px;padding-bottom: 25px;">&mdash;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="bodycopy" style="font-family: sans-serif;font-size: 16px;line-height: 26px;color: #777;padding-left: 10px;">
+                                    Recently leaked photos of celebrities are increasing concerns about the secirut of cloud computer. Learn how to be proactive and keep your information safe.
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td style="padding:30px 0 30px 10px;"><div><!--[if mso]>
+  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:46px;v-text-anchor:middle;width:200px;" arcsize="0%" strokecolor="#fedf6b" fillcolor="#fdd453">
+    <w:anchorlock/>
+    <center style="color:#4f4f4f;font-family:Trebuchet MS,sans-serif;font-size:13px;font-weight:normal;letter-spacing:2px;">READ FULL STORY</center>
+  </v:roundrect>
+<![endif]--><a href="http://" style="background-color:#fedf6b;border:1px solid #fedf6b;border-radius:0px;color:#4f4f4f;display:inline-block;font-family:Trebuchet MS,sans-serif;font-size:13px;font-weight:normal;line-height:46px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;mso-hide:all;letter-spacing:1px;">READ FULL STORY</a></div>
+                                </td>
+                                </tr>
+                            </table>
+                                
+                            </td>
+                        </tr>   
+                      <!-- ***** END STORIES LAYOUT -->     
+                    <tr>
+                        <td align="center" class="innerpadding" style="padding: 30px 50px 10px 50px;">
+                        <hr> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;font-family: sans-serif;padding: 30px 50px 10px 50px;font-size: 16px;line-height: 26px;color: #777;padding-bottom: 20px;" class="innerpadding footer">
+                            
+                            Texas A&amp;M Information Technology
+                            <br>
+                            <a href="" style="color: #1c80c2;">http://it.tamu.edu</a>
+                            <br>
+                            <a href="" style="color: #1c80c2;">it-coms@tamu.edu</a>
+                        </td>
+                    </tr>
+                    
+                </table>
+                <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                    </tr>
+                </table>
+                <![endif]-->
+            </td>
+        </tr>
+    </table>
+    
+</body>
+
+</html>
